@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Ravie;
+}
+
+ul,nav{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;    
+    display: flex;
+    background-color: rgb(20, 20, 20);
+    justify-content:  space-between;
+    align-items: center;
+    color: white;
+    padding: 25px 100px;
+}
+
+header h2{
+    font-family: ravie;
+    text-transform: uppercase;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+header nav{    
+    display: flex;
+}
+
+header nav li{
+    margin: 0 15px;
+}
+header nav li:first-child{
+    margin-left: 0;
+}
+
+header nav li:last-child{
+    margin-right: 0;
+}
+@media (max-width:1000px){
+    header{
+        padding: 20px 50px
+    }
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    header h2{
+        margin-bottom: 15px;
+    }
+    header nav li{
+        margin: 0 7px;
+    }
+}
+
+
+/* Banner Area */
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 100px;
+}
+@media (max-width:1000px){
+    section{
+        padding: 100px 50px;
+    }
+}
+
+@media (max-width:600px){
+    section{
+        padding: 125px 30px;
+    }
+}
+
+section p{
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 0 20px;
+    line-height: 2;
+}
+
+.banner-area{
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+.banner-area .banner-img{
+    background-image: url(images/images2.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+
+.banner-area .banner-img:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .8;
+}
+
+.banner-area h1{
+    margin-bottom: 15px;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: lighter;
+    font-family: merienda;
+}
+
+.banner-area h2{
+    font-family: poppins;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.banner-area a.banner-btn{
+    font-family: Arial;
+    padding: 20px 40px;
+    font-size: 20px;
+    background: crimson;
+    border-radius: 50px;
+}
+
+.banner-area a.banner-btn:hover{
+    background-color: red;
+}
+
+@media (max-width: 800px){
+    .banner-area{
+        min-height: 600px;
+    }
+    .banner-area h1{
+        font-size: 32px;
+    }
+    .banner-area h2{
+        font-size: 32px;
+    }
+    .banner-area a.banner-btn{
+        padding: 15px 40px;
+    }
+}
+
+/* About Area */
+
+ul.about-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-content li{
+    padding: 20px;
+    height: 500px;
+    background-clip: content-box;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-left{
+    flex-basis: 50%;
+    background-image: url(images/patrick.jpg);
+}
+
+.about-left1{
+    flex-basis: 50%;
+    background-image: url(images/joe.jpg);
+}
+
+.about-left2{
+    flex-basis: 50%;
+    background-image: url(images/pete.jpg);
+}
+
+.about-left3{
+    flex-basis: 50%;
+    background-image: url(images/andy.jpg);
+}
+
+.about-right{
+    flex-basis: 60%;
+}
+.about-area p{
+    font-family: poppins;
+    max-width: 800px;
+    margin-bottom: 60px;
+    line-height: 1.5;
+    text-align: left;
+    padding: 0 0px;
+    font-size: 24px;
+}
+
+.section-title{
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+.about-right h2{
+    margin-bottom: 3%;
+    font-family: merienda;
+}
+
+.about-btn{
+    padding:  15px 35px;
+    background: crimson;
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: Arial;
+}
+
+.about-btn:hover{
+    background-color: red;
+}
+
+@media (max-width: 1000px){
+    .about-left,
+    .about-left1,
+    .about-left2,
+    .about-left3,
+    .about-right{
+
+        flex-basis: 100%;
+    }
+
+    .about-content li{
+        padding: 8px;
+    }
+
+    .about-btn{
+        padding: 15px 15px;
+    }
+
+}
+
+.footer{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    text-align: center;
+    font-family: merienda;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
