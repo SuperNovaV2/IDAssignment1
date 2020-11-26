@@ -81,6 +81,8 @@ section{
     align-items: center;
     padding: 110px 100px;
 }
+
+
 @media (max-width:1000px){
     section{
         padding: 100px 50px;
@@ -109,6 +111,18 @@ section p{
     text-align: center;
 }
 
+.banner-area .banner-img:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .8;
+
+}
+
 .banner-area .banner-img{
     background-image: url(images/images2.jpg);
     position: absolute;
@@ -121,16 +135,6 @@ section p{
     z-index: -1;
 }
 
-.banner-area .banner-img:after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    opacity: .8;
-}
 
 .banner-area h1{
     margin-bottom: 15px;
@@ -172,6 +176,78 @@ section p{
         padding: 15px 40px;
     }
 }
+
+/* Image Area */
+
+div.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 280px 100px;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding: 400px 100px;
+}
+
+
+div.banner-area img{
+    width: 20%;
+    height: 230px;
+    opacity: 0.8;
+}
+
+div.banner-area img:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.banner-area .banner-img1{
+    background-color:rgb(15, 15, 15);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+
+div.title{
+    background-color:rgb(15, 15, 15);
+    color: white;
+    font-size: 20px;
+    font-family: merienda;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/* Video Area */
+ ul.video-content{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+ }
+
+ .video-title{
+     font-size: 50px;
+     font-family: merienda;
+ }
+
+ .video-area p{
+     font-size: 30px;
+     font-weight: lighter;
+     margin: 0;
+     font-family: aldrich;
+ }
 
 /* About Area */
 
@@ -275,6 +351,7 @@ ul.about-content{
     background-color: rgb(20, 20, 20);
     color: white;
     text-align: center;
+    justify-content: center;
     font-family: merienda;
     padding: 10px;
 }
