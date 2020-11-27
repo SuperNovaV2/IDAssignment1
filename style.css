@@ -568,6 +568,8 @@ ul.about-content{
 
 .contactForm .inputBox input:focus ~ span,
 .contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox email:focus ~ span,
+.contactForm .inputBox email:valid ~ span,
 .contactForm .inputBox textarea:focus ~ span,
 .contactForm .inputBox textarea:valid ~ span{
     color: #e91e63;
