@@ -10,7 +10,7 @@ body{
     font-family: Ravie;
 }
 
-ul,nav{
+ul,nav,menu{
     list-style: none;
 }
 
@@ -43,18 +43,22 @@ header a:hover{
     text-decoration: underline;
 }
 
-header nav{    
+header nav,
+header nav menu{    
     display: flex;
 }
 
-header nav li{
+header nav li,
+header nav menu li{
     margin: 0 15px;
 }
-header nav li:first-child{
+header nav li:first-child,
+header nav menu li:first-child{
     margin-left: 0;
 }
 
-header nav li:last-child{
+header nav li:last-child
+header nav menu li:last-child{
     margin-right: 0;
 }
 @media (max-width:1000px){
@@ -69,7 +73,8 @@ header nav li:last-child{
     header h2{
         margin-bottom: 15px;
     }
-    header nav li{
+    header nav li,
+    header nav menu li{
         margin: 0 7px;
     }
 }
@@ -297,7 +302,7 @@ div.title{
   
 /* Video Area */
 
- ul.video-content{
+ aside.video-content{
      width: 100%;
      display: flex;
      justify-content: center;
